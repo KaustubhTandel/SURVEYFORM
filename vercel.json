@@ -2,14 +2,14 @@
     "version" : 2,
     "builds" : [
         {
-            "src" : "SurveyForm/wsgi.py",
+            "src" : "manage.py",
             "use" : "@vercel/python"
         }
     ],
     "routes" : [
         {
             "src" : "/(.*)",
-            "dest" : "SurveyForm/wsgi.py"
+            "dest" : "manage.py"
         }
     ]
 }
