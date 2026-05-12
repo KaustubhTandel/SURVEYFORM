@@ -1,0 +1,15 @@
+{
+    "version" : 2,
+    "build" : [
+        {
+            "src" : "SurveyForm/wsgi.py",
+            "use" : "@vercel/python"
+        }
+    ],
+    "route" : [
+        {
+            "src" : "/(.*)",
+            "dest" : "SurveyForm/wsgi.py"
+        }
+    ]
+}
